@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.raycast.com/schemas/api.json",
+  "name": "hoshiray",
+  "title": "HoshiRay",
+  "description": "Japanese dictionary powered by hoshidicts",
+  "icon": "icon.png",
+  "author": "Mathew_Chan",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search",
+      "title": "Search HoshiRay",
+      "description": "Search the HoshiRay Japanese dictionary",
+      "mode": "view"
+    }
+  ],
+  "type": "module",
+  "dependencies": {
+    "@raycast/api": "^1.100.0",
+    "@raycast/utils": "^2.2.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "preferences": [
+    {
+      "name": "keepInMemory",
+      "title": "Keep in Memory",
+      "description": "Keep the extension runtime in memory after closing it",
+      "type": "checkbox",
+      "default": true
+    }
+  ],
+  "scripts": {
+    "build": "ray build -e dist -o ./dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "publish": "ray publish"
+  }
+}
